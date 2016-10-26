@@ -1,0 +1,54 @@
+section {
+       background-color: green;
+     }
+     #text-section {
+       background-color: blue;
+     }
+     .red-text {
+       color: red;
+     }
+     h2.red-text {
+       font-size: 100px;
+     }
+
+header > h3 {
+  display: inline-block;
+  margin:0;
+}
+
+header > nav {
+  float: right;
+}
+
+header > nav > ul li {
+    float: left;
+    margin: 0 10px;
+    list-style: none;
+}
+
+body {
+    margin: 0;
+}
+
+header > nav > ul li {
+    float: left;
+    margin: 0 10px;
+    list-style: none;
+}
+
+header {background-color: aqua;padding: 10px 15px;}
+
+header > nav > ul li> a {
+    text-decoration: none;
+    color: #524c4c;
+    font-family: helvetica, arial;
+}
+
+body {
+    margin: 0;
+}
+
+header > nav > ul {
+    padding: 0;
+    margin: 0;
+}
