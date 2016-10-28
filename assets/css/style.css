@@ -1,54 +1,102 @@
-section {
-       background-color: green;
-     }
-     #text-section {
-       background-color: blue;
-     }
-     .red-text {
-       color: red;
-     }
-     h2.red-text {
-       font-size: 100px;
-     }
-
-header > h3 {
+header > h3,
+footer > h5 {
   display: inline-block;
   margin:0;
 }
 
-header > nav {
+header {
+    position: fixed;
+    width: 100%;
+}
+
+header > nav,
+footer > nav {
   float: right;
+  margin-right: 15px;
 }
 
-header > nav > ul li {
-    float: left;
-    margin: 0 10px;
-    list-style: none;
-}
-
-body {
-    margin: 0;
-}
-
-header > nav > ul li {
-    float: left;
-    margin: 0 10px;
-    list-style: none;
-}
-
-header {background-color: aqua;padding: 10px 15px;}
-
-header > nav > ul li> a {
-    text-decoration: none;
-    color: #524c4c;
-    font-family: helvetica, arial;
-}
-
-body {
-    margin: 0;
-}
-
-header > nav > ul {
+header > nav > ul,
+footer > nav > ul {
     padding: 0;
     margin: 0;
+}
+
+body {
+    margin: 0;
+}
+
+header > nav > ul li,
+footer > nav > ul li {
+    float: left;
+    margin: 0 10px;
+    list-style: none;
+}
+
+header,
+footer {
+  background-color: aqua;
+  padding: 10px 15px;
+}
+
+header > nav > ul li> a,
+footer > nav > ul li> a {
+    text-decoration: none;
+    color: #524c4c;
+    font-family: helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+aside {
+    float: left;
+    width: 20%;
+    margin-top: 40px;
+    position: fixed;
+}
+
+aside > ol {
+    padding: 0;
+}
+
+aside > ol li {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+aside > ol li > a {
+    text-decoration: none;
+    color: #333;
+    font-family: helvetica, sans-serif;
+    width: 80%;
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: .4s;
+}
+
+aside > ol li > a:hover {
+    background-color: aquamarine;
+}
+
+main {
+    float: left;
+    width: calc(80% - 60px);
+    background-color: #F7F7F7;
+    padding: 0 30px;
+    margin-top: 42px;
+    margin-left: 20%;
+}
+
+main > section {
+    margin-bottom: 60px;
+}
+
+footer {
+    clear: both;
+    background-color: #FFB6C1;
 }
